@@ -36,3 +36,18 @@ while ($cont <= 10) {
   echo $num * $cont . PHP_EOL;
   $cont++;
 }
+
+//BMI calculation
+
+$weight = 60;
+$height = 180;
+
+$bmi = $weight / ($height ** 2);
+
+if ($bmi < 18.5) {
+  echo 'Magreza';
+} else if ($bmi >= 18.5 && $bmi >= 24.9) {
+  echo 'Normal';
+} else {
+  echo 'Sobrepeso';
+}
