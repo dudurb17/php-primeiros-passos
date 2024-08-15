@@ -1,10 +1,6 @@
 <?php
 require_once 'funcoes.php';
-function exibeMensagem($mensagem)
-{
-  echo $mensagem . PHP_EOL;
 
-}
 
 
 $contasCorrentes = [
@@ -28,6 +24,8 @@ $contasCorrentes['123.343.343-23'] = depositar(
   $contasCorrentes['123.343.343-23'],
   1000
 );
+
+titularComLetraMaiusculas($contasCorrentes['123.343.343-23']);
 
 foreach ($contasCorrentes as $key => $conta) {
   exibeMensagem("$key  $conta[titular] {$conta['saldo']}");
