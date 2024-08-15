@@ -49,5 +49,5 @@ $contasCorrentes['123.343.343-23'] = depositar(
 );
 
 foreach ($contasCorrentes as $key => $conta) {
-  exibeMensagem($key . ' ' . $conta['titular'] . ' saldo: ' . $conta['saldo']);
+  exibeMensagem("$key  $conta[titular] {$conta['saldo']}");
 }
